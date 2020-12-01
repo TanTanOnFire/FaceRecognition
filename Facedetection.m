@@ -1,8 +1,5 @@
-
-close all;
+function Facedetection(ph)
 % read the image 
-
-ph='pic_0028.jpg';
 img=imread(ph);
 subplot(1,4,1);
 imshow(ph);
@@ -121,5 +118,4 @@ se = strel('disk',15);
 figure, imshow(ph);
 rectangle('position', z{sw},'EdgeColor','r','LineWidth',2);
 
-
-
+return;
